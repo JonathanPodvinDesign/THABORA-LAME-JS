@@ -1,0 +1,643 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: white;
+  font-family: "optima_lt_proroman", serif;
+}
+
+input {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 10px;
+}
+
+body {
+  background-color: #2A2A2A;
+}
+
+@font-face {
+  font-family: "optima_lt_probold_italic";
+  src: url("/fonts/optimaltpro-bolditalic-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_prodemi_bold";
+  src: url("/fonts/optimaltpro-demibold-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-demibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_prodemi_bold_italic";
+  src: url("/fonts/optimaltpro-demibolditalic-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-demibolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_proextra_black";
+  src: url("/fonts/optimaltpro-extrablack-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-extrablack-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_proXBlkIt";
+  src: url("/fonts/optimaltpro-extrablackita-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-extrablackita-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_proitalic";
+  src: url("/fonts/optimaltpro-italic-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_promedium";
+  src: url("/fonts/optimaltpro-medium-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_promedium_italic";
+  src: url("/fonts/optimaltpro-mediumitalic-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_proroman";
+  src: url("/fonts/optimaltpro-roman-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-roman-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_problack";
+  src: url("/fonts/optimaltpro-black-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_problack_italic";
+  src: url("/fonts/optimaltpro-blackitalic-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "optima_lt_probold";
+  src: url("/fonts/optimaltpro-bold-webfont.woff2") format("woff2"), url("/fonts/optimaltpro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "verdanaregular";
+  src: url("/fonts/verdana-webfont.woff2") format("woff2"), url("/fonts/verdana-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "verdanaregular";
+  src: url("/fonts/verdana-webfont.woff2") format("woff2"), url("/fonts/verdana-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "times_new_romanregular";
+  src: url("/fonts/times-webfont.woff2") format("woff2"), url("/fonts/times-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "segoe_printregular";
+  src: url("/fonts/segoepr-webfont.woff2") format("woff2"), url("/fonts/segoepr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.message {
+  left: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  width: 420px;
+  height: 100vh;
+  text-align: center;
+}
+.message h3 {
+  font-family: "Yeseva One", cursive;
+  display: flex;
+  transform: rotate(-90deg);
+  font-size: 35px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+body .images {
+  z-index: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .main__fabriquer {
+  position: relative;
+  height: 960px;
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .main__fabriquer__selection {
+  position: absolute;
+  top: 150px;
+  height: 33%;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+body .main__fabriquer__selection .main__fabriquer__selection__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .main__fabriquer__selection .main__fabriquer__selection__title h3 {
+  width: 33%;
+}
+body .main__fabriquer__selection .selection__container {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section {
+  height: 100%;
+  width: 33%;
+  text-align: center;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section h3 {
+  color: white;
+  font-family: "optima_lt_proroman", serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw {
+  position: relative;
+  display: flex;
+  text-align: left;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__lines {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__lines__container {
+  width: 12px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__lines__container .lamebrillanteround {
+  background-color: #fff;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__lines__container__round {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__lines__container--trait {
+  position: absolute;
+  top: 13px;
+  height: 20px;
+  width: 1px;
+  background-color: white;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw .main__fabriquer__selection__section__raw__title--lamebrillante {
+  opacity: 1;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw h4 {
+  width: 60%;
+  color: white;
+  opacity: 0.5;
+  font-weight: 400;
+  cursor: pointer;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */ /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+  width: 300px;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu {
+  z-index: 10;
+  position: absolute;
+  right: 100px;
+  display: none;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu--hidden {
+  display: none;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu--show {
+  display: block;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu__line {
+  position: absolute;
+  left: -50px;
+  top: 6px;
+  background-color: #fff;
+  height: 1px;
+  width: 40px;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu__line__round {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu ul {
+  position: absolute;
+  top: 0px;
+  transition: 0.3s ease-out;
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu ul li {
+  width: 150px;
+  color: white;
+  opacity: 0.5;
+  margin: 12px;
+  cursor: pointer;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */ /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}
+body .main__fabriquer__selection .selection__container .main__fabriquer__selection__section__raw__sousmenu ul li:first-child {
+  margin-top: 0;
+  color: white;
+  opacity: 1;
+}
+body .main__fabriquer__gravure {
+  position: absolute;
+  bottom: 0px;
+  height: 33%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main__fabriquer__gravure__titles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+body .main__fabriquer__gravure__titles__titregravurelameavant {
+  display: block;
+  width: 33%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "optima_lt_proroman", serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body .main__fabriquer__gravure__titles__blank {
+  width: 33%;
+}
+body .main__fabriquer__gravure__titles__titregravurelamearriere {
+  display: block;
+  opacity: 0.2;
+  width: 33%;
+  text-transform: uppercase;
+  color: white;
+  font-family: "optima_lt_proroman", serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body .main__fabriquer__gravure .gravure__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 185px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--gravureslame {
+  z-index: 101;
+  display: block;
+  width: 33%;
+  overflow: hidden;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--switch {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--switch button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
+  border: 0px solid #fff;
+  border-radius: 50px;
+  height: 40px;
+  width: 160px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "optima_lt_proroman", serif;
+  cursor: pointer;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--switch button:first-child {
+  background-color: #3e5153;
+  top: -50px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--switch button:last-child {
+  bottom: -50px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section--gravureslamearriere {
+  display: block;
+  z-index: 101;
+  opacity: 0.2;
+  width: 33%;
+  overflow: hidden;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-right: 35px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw {
+  position: relative;
+  display: flex;
+  text-align: left;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw h4 {
+  line-height: 13px;
+  padding-top: 20px;
+  width: 60%;
+  color: white;
+  opacity: 0.5;
+  font-weight: 400;
+  cursor: pointer;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */ /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+  width: 300px;
+  cursor: pointer;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__lines {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__lines__container {
+  width: 12px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__lines__container__round {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__lines__container--trait {
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: white;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu {
+  z-index: 10;
+  position: absolute;
+  right: 100px;
+  display: none;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu--hidden {
+  display: none;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu--show {
+  display: block;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu__line {
+  position: absolute;
+  left: -50px;
+  top: 6px;
+  background-color: #fff;
+  height: 1px;
+  width: 40px;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu__line__round {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu ul {
+  position: absolute;
+  top: 0px;
+  transition: 0.3s ease-out;
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu ul li {
+  width: 150px;
+  color: white;
+  opacity: 0.5;
+  margin: 12px;
+  cursor: pointer;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */ /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}
+body .main__fabriquer__gravure .gravure__container .main__fabriquer__gravure__section__container__raw__sousmenu ul li:first-child {
+  margin-top: 0;
+  color: white;
+  opacity: 1;
+}
+body .main__fabriquer__couteau {
+  opacity: 1;
+  z-index: 0;
+  position: absolute;
+  height: 150px;
+  width: 1170px;
+}
+body .main__fabriquer__couteau__lame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__manche {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__plaquette {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform-origin: center;
+  animation: plaquetteanimation 300ms;
+}
+@keyframes plaquetteanimation {
+  from {
+    transform: scale(150%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+body .main__fabriquer__couteau__gravure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__vis {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__arriere {
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  height: 150px;
+  width: 1170px;
+}
+body .main__fabriquer__couteau__arriere__lame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__arriere__plaquette {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__arriere__vis {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .main__fabriquer__couteau__arriere__text {
+  z-index: 999;
+  position: absolute;
+  right: 230px;
+  top: 28px;
+  height: 30px;
+  width: 300px;
+  border: transparent;
+  background-color: transparent;
+  color: #1a1a1a;
+  font-family: arial;
+  font-size: 16px;
+}
+body .main__fabriquer__couteau__arriere__text:focus {
+  outline: none;
+}
+body .main__commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  width: 100vw;
+}
+body .main__commander--panier {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 50px 15px;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+}
+body .main__commander--panier:hover {
+  background-color: #124a52;
+  transition: background-color 300ms linear;
+}
+body .main__commander--panier a {
+  padding-left: 20px;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}/*# sourceMappingURL=fabriquer.css.map */

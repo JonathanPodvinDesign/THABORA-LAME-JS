@@ -1,0 +1,43 @@
+header {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 25px;
+    ul{
+        li{
+            display: flex;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            height: 40px;
+            margin: 15px;
+            text-transform: uppercase;
+            line-height: 0;
+
+            &:last-child{
+                width: 130px;
+                background-color: $primary-color;
+                border-radius: 50px;
+                margin-left: 10px;
+            }
+
+            a{
+                --thickness: .05em;
+                --strike: 0;
+                background: linear-gradient(90deg, transparent, currentColor 0) no-repeat 
+                right center / calc(var(--strike) * 100%) var(--thickness);
+                transition: background-size .1s ease-out;
+                font: 16px $primary-font;
+                padding: 0 .2em; 
+              
+                &:hover{
+                    --strike: 1;
+                    background-position-x: left;
+                }
+              }
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+.message {
+  left: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  width: 420px;
+  height: 100vh;
+  text-align: center;
+  h3 {
+    font-family: $secondary-font;
+    display: flex;
+    transform: rotate(-90deg);
+    font-size: 35px;
+  }
+}

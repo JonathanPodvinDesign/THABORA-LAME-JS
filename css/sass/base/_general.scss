@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: white;
+  font-family: 'optima_lt_proroman', serif;
+}
+
+input {
+  user-select: none;
+  padding: 10px;
+}
+
+body {
+  background-color: $secondary-color;
+}
+//////////////////////////////////////////////////////////////
+// FONTS
+///////////////////////////////////////////////////////////////
+
+@font-face {
+  font-family: 'optima_lt_probold_italic';
+  src: url('/fonts/optimaltpro-bolditalic-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_prodemi_bold';
+  src: url('/fonts/optimaltpro-demibold-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-demibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_prodemi_bold_italic';
+  src: url('/fonts/optimaltpro-demibolditalic-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-demibolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_proextra_black';
+  src: url('/fonts/optimaltpro-extrablack-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-extrablack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_proXBlkIt';
+  src: url('/fonts/optimaltpro-extrablackita-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-extrablackita-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_proitalic';
+  src: url('/fonts/optimaltpro-italic-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_promedium';
+  src: url('/fonts/optimaltpro-medium-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_promedium_italic';
+  src: url('/fonts/optimaltpro-mediumitalic-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_proroman';
+  src: url('/fonts/optimaltpro-roman-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-roman-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_problack';
+  src: url('/fonts/optimaltpro-black-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_problack_italic';
+  src: url('/fonts/optimaltpro-blackitalic-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-blackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'optima_lt_probold';
+  src: url('/fonts/optimaltpro-bold-webfont.woff2') format('woff2'),
+       url('/fonts/optimaltpro-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+// VERDANA
+
+@font-face {
+  font-family: 'verdanaregular';
+  src: url('/fonts/verdana-webfont.woff2') format('woff2'),
+       url('/fonts/verdana-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'verdanaregular';
+  src: url('/fonts/verdana-webfont.woff2') format('woff2'),
+       url('/fonts/verdana-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+// TIMES NEW ROMAN
+
+@font-face {
+  font-family: 'times_new_romanregular';
+  src: url('/fonts/times-webfont.woff2') format('woff2'),
+       url('/fonts/times-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+// SEGOE
+
+@font-face {
+  font-family: 'segoe_printregular';
+  src: url('/fonts/segoepr-webfont.woff2') format('woff2'),
+       url('/fonts/segoepr-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
