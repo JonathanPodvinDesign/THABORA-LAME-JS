@@ -23,7 +23,7 @@
       text-align: center;
       text-transform: uppercase;
     }
-  
+
     & h3 {
       font-family: $secondary-font;
       font-size: 24px;
@@ -34,30 +34,30 @@
   }
 
   // SECTION PRODUITS
-  & .produits{
+  & .produits {
     width: 100%;
     height: 500px;
     position: relative;
     overflow: hidden;
 
-    & .degrade{
+    & .degrade {
       position: absolute;
       height: 75px;
       width: 100%;
       z-index: 100;
     }
 
-    & .degradetop{
+    & .degradetop {
       top: 0;
-      background: linear-gradient(#1A1A1A, transparent);
+      background: linear-gradient($secondary-color, transparent);
     }
 
-    & .degradebottom{
+    & .degradebottom {
       bottom: 0;
-      background: linear-gradient(transparent, #1A1A1A);
+      background: linear-gradient(transparent, $secondary-color);
     }
 
-    & .couteaux{
+    & .couteaux {
       width: 100%;
       height: 100%;
       display: flex;
@@ -65,7 +65,7 @@
       align-items: center;
       flex-direction: column;
 
-      & .couteau{
+      & .couteau {
         width: 100%;
         height: 150px;
         margin: 50px;
@@ -75,7 +75,7 @@
   }
 }
 
-.coouteauhide{
-  filter : saturate(0.3);
+.coouteauhide {
+  filter: saturate(0.3);
   transform: scale(0.7);
 }

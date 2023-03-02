@@ -783,11 +783,11 @@ body .main__commander--panier a {
 }
 .shop .produits .degradetop {
   top: 0;
-  background: linear-gradient(#1A1A1A, transparent);
+  background: linear-gradient(#2A2A2A, transparent);
 }
 .shop .produits .degradebottom {
   bottom: 0;
-  background: linear-gradient(transparent, #1A1A1A);
+  background: linear-gradient(transparent, #2A2A2A);
 }
 .shop .produits .couteaux {
   width: 100%;
